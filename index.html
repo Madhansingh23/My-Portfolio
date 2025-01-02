@@ -12,11 +12,16 @@
     <link rel="stylesheet" href="swiper-bundle.min.css">
     <!-- main css -->
      <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="style.css?v=1.0">
+
     <title>Madhan Portfolio</title>
 </head>
 
 <body>
     <!-- Sidebar Section -->
+     <div class="nav__toggle" id="nav-toggle">
+        <i class="uil uil-bars"></i>
+     </div>
     <aside class="sidebar" id="sidebar">
         <nav class="nav">
             <div class="nav__logo">
@@ -48,6 +53,9 @@
             </div>
             <div class="btn__share">
                 <i class="uil uil-share-alt social__share"></i>
+            </div>
+            <div class="nav__close" id="nav-close">
+                <i class="uil uil-times"></i>
             </div>
         </nav>
     </aside>
@@ -84,14 +92,14 @@
                             </a> -->
                         </div>
                 </div>
-                <img src="assets/home-img.png" class="home__img" alt="">
+                <img src="assets/home-img.jpg" class="home__img" alt="">
                 <div class="home__data">
                     <h1 class="home__title">Hi,I am Madhan Singh</h1>
-                    <h3 class="home__subtitle">Developer</h3>
-                    <p class="home__description">I am an Enthusiatic ready to work on nvarious fields and learn various skille gradually.</p>
+                    <h3 class="home__subtitle">Web Developer</h3>
+                    <p class="home__description">I am an Enthusiatic Learner, Ready to work on various fields and learn various skills gradually.</p>
                     <a href="#about" class="button">
                         <i class="uil uil-user button__icon"></i>
-                        Wanna Read More About Me
+                        Wanna Read More About Me!
                     </a>
                 </div>
                 <div class="my__info">
@@ -366,8 +374,7 @@
                                     <span class="skills__percentage" style="width:70%"></span>
                                 </div>
                             </div>
-
-                                                        
+                               
                             <div class="skills__data">
                                 <div class="skills__titles">
                                     <h3 class="skills__name">MySQL</h3>
@@ -499,30 +506,472 @@
             </div>
         </section>
         <!-- Work Section-->
-        
+        <section class="work section" id="work">
+            <h2 data-heading="My Portfolio" class="section__title">Recent Works</h2>
+            <div class="work__filters">
+                <span class="work__item active-work"  data-filter="all">
+                    All
+                </span>
+                <span class="work__item" data-filter=".web">
+                    Web
+                </span>
+                <span class="work__item" data-filter=".app">
+                    App
+                </span>
+                <span class="work__item" data-filter=".brand">
+                    Designer
+                </span>
+            </div>
+            <div class="work__container container grid">
+                <div class="work__card mix web">
+                    <img src="assets/work-1.webp" class="work__img" alt="">
+                    <h3 class="work__title">Web Design</h3>
+                    <span class="work__button">
+                        Demo
+                        <i class="uil uil-arrow-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title"></h3>
+                        <p class="details__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo cumque dolor eveniet minus adipisci repellendus ex hic? Porro dicta natus rerum itaque deserunt vero unde, doloremque et facere iste blanditiis!</p>
+                        <ul class="details__info">
+                            <li>Created -<span>dec 2024</span></li>
+                            <li>Technologies - <span>HTML,CSS</span></li>
+                            <li>Role - <span>Frontend</span></li>
+                            <li>View - <span><a href="www.github.com"></a></span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work__card mix brand">
+                    <img src="assets/work-2.webp" class="work__img" alt="">
+                    <h3 class="work__title">Brand Design</h3>
+                    <span class="work__button">
+                        Demo
+                        <i class="uil uil-arrow-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title"></h3>
+                        <p class="details__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo cumque dolor eveniet minus adipisci repellendus ex hic? Porro dicta natus rerum itaque deserunt vero unde, doloremque et facere iste blanditiis!</p>
+                        <ul class="details__info">
+                            <li>Created -<span>dec 2024</span></li>
+                            <li>Technologies - <span>HTML,CSS</span></li>
+                            <li>Role - <span>Frontend</span></li>
+                            <li>View - <span><a href="www.github.com"></a></span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work__card mix web">
+                    <img src="assets/work-3.webp" class="work__img" alt="">
+                    <h3 class="work__title">Web Design</h3>
+                    <span class="work__button">
+                        Demo
+                        <i class="uil uil-arrow-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title"></h3>
+                        <p class="details__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo cumque dolor eveniet minus adipisci repellendus ex hic? Porro dicta natus rerum itaque deserunt vero unde, doloremque et facere iste blanditiis!</p>
+                        <ul class="details__info">
+                            <li>Created -<span>dec 2024</span></li>
+                            <li>Technologies - <span>HTML,CSS</span></li>
+                            <li>Role - <span>Frontend</span></li>
+                            <li>View - <span><a href="www.github.com"></a></span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work__card mix app">
+                    <img src="assets/work-4.webp" class="work__img" alt="">
+                    <h3 class="work__title">App Design</h3>
+                    <span class="work__button">
+                        Demo
+                        <i class="uil uil-arrow-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title"></h3>
+                        <p class="details__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo cumque dolor eveniet minus adipisci repellendus ex hic? Porro dicta natus rerum itaque deserunt vero unde, doloremque et facere iste blanditiis!</p>
+                        <ul class="details__info">
+                            <li>Created -<span>dec 2024</span></li>
+                            <li>Technologies - <span>HTML,CSS</span></li>
+                            <li>Role - <span>Frontend</span></li>
+                            <li>View - <span><a href="www.github.com"></a></span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work__card mix brand">
+                    <img src="assets/work-5.webp" class="work__img" alt="">
+                    <h3 class="work__title">Brand Design</h3>
+                    <span class="work__button">
+                        Demo
+                        <i class="uil uil-arrow-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title"></h3>
+                        <p class="details__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo cumque dolor eveniet minus adipisci repellendus ex hic? Porro dicta natus rerum itaque deserunt vero unde, doloremque et facere iste blanditiis!</p>
+                        <ul class="details__info">
+                            <li>Created -<span>dec 2024</span></li>
+                            <li>Technologies - <span>HTML,CSS</span></li>
+                            <li>Role - <span>Frontend</span></li>
+                            <li>View - <span><a href="www.github.com"></a></span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work__card mix app">
+                    <img src="assets/work-6.webp" class="work__img" alt="">
+                    <h3 class="work__title">App Design</h3>
+                    <span class="work__button">
+                        Demo
+                        <i class="uil uil-arrow-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title"></h3>
+                        <p class="details__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo cumque dolor eveniet minus adipisci repellendus ex hic? Porro dicta natus rerum itaque deserunt vero unde, doloremque et facere iste blanditiis!</p>
+                        <ul class="details__info">
+                            <li>Created -<span>dec 2024</span></li>
+                            <li>Technologies - <span>HTML,CSS</span></li>
+                            <li>Role - <span>Frontend</span></li>
+                            <li>View - <span><a href="www.github.com"></a></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- Portfolio Popup Section -->
-        
+        <div class="portfolio__popup">
+            <div class="portfolio__popup-inner">
+                <div class="portfolio__popup-content grid">
+                    <span class="portfolio__popup-close">
+                        <i class="uil uil-times"></i>
+                    </span>
+                        <div class="pp__thumbnail">
+                            <img src="assets/work-2.webp" alt="" class="portfolio__popup-img">
+                        </div>
+                        <div class="portfolio__popup-info">
+                            <div class="portfolio__popup-subtitle">Featured - <span>Design</span></div>
+                            <div class="portfolio__popup-body">
+                                <h3 class="details__title">App Design</h3>
+                                <p class="details__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo cumque dolor eveniet minus adipisci repellendus ex hic? Porro dicta natus rerum itaque deserunt vero unde, doloremque et facere iste blanditiis!</p>
+                                <ul class="details__info">
+                                    <li>Technologies - <span>HTML,CSS</span></li>
+                                    <li>Role - <span>Frontend</span></li>
+                                    <li>View - <span><a href="www.github.com"></a></span></li>
+                                    <li>Created -<span>dec 2024</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
         <!-- Services Section-->
-        
+        <section class="services section" id="services">
+            <h2 data-heading="Services" class="section__title">What I Offer</h2>
+            <div class="services__container container grid">
+                <div class="services__content">
+                    <div class="">
+                        <i class="uil uil-web-grid services__icon"></i>
+                        <h3 class="services__title">Web  <br>Designer</h3>
+                    </div>
+                    <span class="services__button">
+                        View More
+                        <i class="uil uil-arrow-right services__button-icon"></i>
+                    </span>
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class="uil uil-times services__modal-close"></i>
+                            <h3 class="services__modal-title">Web Designer</h3>
+                            <p class="services__modal-description">Services after 1 year of experience.Proving Quality work to clients and companies.</p>
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info"> I develop the user Interface</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Web Page Development</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">I create UX element Interaction</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">I position Your company Brand</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Design and Mockup of products for Company</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services__content">
+                    <div class="">
+                        <i class="uil uil-arrow services__icon"></i>
+                        <h3 class="services__title">UI/UX  <br>Designer</h3>
+                    </div>
+                    <span class="services__button">
+                        View More
+                        <i class="uil uil-arrow-right services__button-icon"></i>
+                    </span>
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class="uil uil-times services__modal-close"></i>
+                            <h3 class="services__modal-title">Web Designer</h3>
+                            <p class="services__modal-description">Services after 1 year of experience.Proving Quality work to clients and companies.</p>
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info"> I develop the user Interface</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Web Page Development</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">I create UX element Interaction</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">I position Your company Brand</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Design and Mockup of products for Company</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services__content">
+                    <div class="">
+                        <i class="uil uil-edit services__icon"></i>
+                        <h3 class="services__title">Branding  <br>Designer</h3>
+                    </div>
+                    <span class="services__button">
+                        View More
+                        <i class="uil uil-arrow-right services__button-icon"></i>
+                    </span>
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class="uil uil-times services__modal-close"></i>
+                            <h3 class="services__modal-title">Web Designer</h3>
+                            <p class="services__modal-description">Services after 1 year of experience.Proving Quality work to clients and companies.</p>
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info"> I develop the user Interface</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Web Page Development</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">I create UX element Interaction</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">I position Your company Brand</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Design and Mockup of products for Company</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- Testimonials Section -->
-        
-        <!-- COntact Section-->
-        
+        <section class="testimonials section">
+            <h2 class="section__title" data-heading="My Clients">Credits</h2>
+            <div class="testimonials__container container swiper">
+                <div class="swiper-wrapper">
+
+                    <div class="testimonial__card swiper-slide">
+                        <div class="testimonial__quote">
+                            <i class='bx bxs-quote-alt-left'></i>
+                        </div>
+                        <p class="testimonial__Description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed ipsum aliquid officiis. Quos eveniet nihil sequi inventore dolores nobis sit hic similique laborum, consectetur aperiam corporis cupiditate porro provident quis!</p>
+                        <h3 class="testimonial__date">March 5.2024</h3>
+                        <div class="testimonial__profile">
+                            <img src="assets/client1.jpg" alt="" class="testimonial__profile-img">
+                            <div class="testimonial__profile_data">
+                                <span class="testimonial__profile_name">Lee Doe</span>
+                                <span class="testimonial__profile-detail">Director of a Company</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial__card swiper-slide">
+                        <div class="testimonial__quote">
+                            <i class='bx bxs-quote-alt-left'></i>
+                        </div>
+                        <p class="testimonial__Description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed ipsum aliquid officiis. Quos eveniet nihil sequi inventore dolores nobis sit hic similique laborum, consectetur aperiam corporis cupiditate porro provident quis!</p>
+                        <h3 class="testimonial__date">March 5.2024</h3>
+                        <div class="testimonial__profile">
+                            <img src="assets/client2.jpg" alt="" class="testimonial__profile-img">
+                            <div class="testimonial__profile_data">
+                                <span class="testimonial__profile_name">Lee Doe</span>
+                                <span class="testimonial__profile-detail">Director of a Company</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial__card swiper-slide">
+                        <div class="testimonial__quote">
+                            <i class='bx bxs-quote-alt-left'></i>
+                        </div>
+                        <p class="testimonial__Description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed ipsum aliquid officiis. Quos eveniet nihil sequi inventore dolores nobis sit hic similique laborum, consectetur aperiam corporis cupiditate porro provident quis!</p>
+                        <h3 class="testimonial__date">March 5.2024</h3>
+                        <div class="testimonial__profile">
+                            <img src="assets/client3.jpg" alt="" class="testimonial__profile-img">
+                            <div class="testimonial__profile_data">
+                                <span class="testimonial__profile_name">Lee Doe</span>
+                                <span class="testimonial__profile-detail">Director of a Company</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <!-- Contact Section-->
+        <section class="contact section" id="contact">
+            <h2 class="section__title" data-heading="Get in Touch">Contact Me</h2>
+            <div class="contact__container container grid">
+               <div class="contact__content">
+                <div class="contact__info">
+                    <div class="contact__card">
+                        <i class="uil uil-envelope-edit contact__Card-icon"></i>
+                        <h3 class="contact__card-title">Email</h3>
+                        <span class="contact__card-data">t.madhansingh23@gmail.com</span>
+                        <span class="contact__button">
+                            Write Me<i class="uil uil-arrow-right contact__button"></i>
+                        </span>
+                    </div>
+
+                    <div class="contact__card">
+                        <i class="uil uil-whatsapp contact__Card-icon"></i>
+                        <h3 class="contact__card-title">Whatsapp</h3>
+                        <span class="contact__card-data">+91 6382703678</span>
+                        <span class="contact__button">
+                            Write Me<i class="uil uil-arrow-right contact__button"></i>
+                        </span>
+                    </div>
+
+                    <div class="contact__card">
+                        <i class="uil uil-facebook-messenger contact__Card-icon"></i>
+                        <h3 class="contact__card-title">Facebook Messenger</h3>
+                        <span class="contact__card-data">madhan.singh.3551380</span>
+                        <span class="contact__button">
+                            Write Me<i class="uil uil-arrow-right contact__button"></i>
+                        </span>
+                    </div>
+                </div>
+               </div> 
+               <div class="contact__content">
+                <form action="" class="contact__form">
+                    <div class="input__container">
+                        <input type="text" class="input">
+                        <label for="">Username</label>
+                        <span>Username</span>
+                    </div>
+
+                    <div class="input__container">
+                        <input type="email" class="input">
+                        <label for="">Email</label>
+                        <span>Email</span>
+                    </div>
+
+                    <div class="input__container">
+                        <input type="tel" class="input">
+                        <label for="">Phone</label>
+                        <span>Phone</span>
+                    </div>
+
+                    <div class="input__container textarea">
+                        <textarea class="input" rows="10"></textarea>
+                        <label for="">Message</label>
+                        <span>Message</span>
+                    </div>
+                    <button type="submit" class="button">
+                        <i class="uil uil-navigator button__icon"></i>
+                        Send Message
+                    </button>
+                </form>
+               </div>
+            </div>
+        </section>
         <!-- Footer Section-->
-        
+        <footer class="footer">
+            <div class="footer__bg">
+                <div class="footer__container container grid">
+                    <div class="">
+                        <h1 class="footer__title">Madhan Singh</h1>
+                        <span class="footer__subtitle">Front-End Developer</span>
+                    </div>
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#services" class="footer__link">Services</a>
+                        </li>
+                        <li>
+                            <a href="#work" class="footer__link">Work</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="footer__link">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="footer__socials">
+                        <a href="https://www.facebook.com/madhan.singh.3551380/" target="_blank" class="footer__social">
+                            <!-- Facebook -->
+                            <i class="uil uil-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/mr.darkstrange/?next=%2Ftemptcgc%2F" target="_blank" class="footer__social">
+                            <!-- Instagram -->
+                            <i class="uil uil-instagram-alt"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/madhan-singh6382703678/" target="_blank" class="footer__social">
+                            <!-- LinkedIn -->
+                            <i class="uil uil-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/Madhansingh23" target="_blank" class="footer__social">
+                            <!-- Github -->
+                            <i class="uil uil-github"></i>
+                        </a>
+                        <a href="https://www.instagram.com/mr.darkstrange/?next=%2Ftemptcgc%2F" target="_blank" class="footer__social">
+                            <!-- Twitter -->
+                            <i class="uil uil-twitter"></i>
+                        </a>
+                        <!-- <a href="https://leetcode.com/u/Madhansingh/" target="_blank" class="footer__social">
+                            Leetcode
+                        </a> -->
+                    </div>
+                </div>
+                <p class="footer__copy">&#169;Darkstrange.All rights reserverd.</p>
+            </div>
+        </footer>
     </main>
 
     <!-- Scroll up-->
     
 
     <!-- Mix it up -->
-    <script src="assets/js/mixitup.min.js"></script>
+    <script src="mixitupmin.js"></script>
 
     <!-- Swiper.js -->
     <script src="swiper-bundle.min.js"></script>
 
     <!-- Main.js -->
-    <script src="main.js"></script>
+     <script src="main.js"></script>
 </body>
 
 </html>
