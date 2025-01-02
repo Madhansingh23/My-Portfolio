@@ -1,0 +1,15 @@
+iconscout- from iconscout
+mixit up - download form mixitup website
+   extract file
+   open dist
+   copy mixitup.min.js
+   paste in this repo or folder
+mixit up -download
+   extract file
+   open dist
+   copy mixitup.min.js
+   paste in this repo or folder
+Swiper
+   go to swiper websiteuse swiper from cdn
+   download assets
+   save as swiperbundle.css and js in folder
