@@ -13,3 +13,6 @@ Swiper
    go to swiper websiteuse swiper from cdn
    download assets
    save as swiperbundle.css and js in folder
+
+
+To watch Deployments: https://madhansingh23.github.io/My-Portfolio/
